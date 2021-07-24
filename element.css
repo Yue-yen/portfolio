@@ -1,0 +1,270 @@
+*{
+	position: relative;
+	box-sizing: border-box;
+}
+/*----------*/
+/*font*/
+/*----------*/
+
+body,html{
+	font-family: 'Helvetica','roboto',arial,sans-serif, 'Merriweather', serif;
+}
+h1,h2,h3,h4,h5,h6{
+	margin-top: 24px;
+	margin-bottom:24px;
+}
+h1,h2,h3,h4,h5,h6,p{
+	color:#484848;
+}
+h1{
+	font-weight: 600;
+}
+/*----------*/
+/*bg*/
+/*----------*/
+
+.bg{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #a3a3a3;
+	object-fit: cover;
+}
+
+
+/*----------*/
+/*index title*/
+/*----------*/
+.people-imgbox{
+	display: block;
+	margin-top: 10vh;
+	margin-left: auto;
+    margin-right: auto;
+	overflow: hidden;
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	line-height: 150px;
+	text-align: center;
+}
+.people__img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 0 60%;
+	object-fit: cover;
+}
+.people__img:hover{
+  border: 2px solid rgba(0,160,80,0);
+  color: #FFF;
+}
+.title-box{
+	text-align: center;
+}
+.title-box .title{
+	font-size: 30px;
+}
+.title-box .subtitle{
+	font-size: 18px;
+}
+
+
+/*----------------*/
+/* title animate */
+/*----------------*/
+.ml12 {
+  font-weight: 200;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+/*----------------*/
+/* cards */
+/*----------------*/
+.cards-group{
+	margin-top: 60px;
+	margin-bottom: 60px;
+	display: block;
+}
+.cards-group .imgbox{
+	border: 1px solid #fefefe;
+	border-radius: 15px;
+	width: 100%;
+	overflow: hidden;
+}
+.cards-group .image-inner{
+	width: 100%;
+	padding-top: calc(100% * 2 / 3);
+	position: relative;
+	height: 0;
+	/*border: 1px solid #fff;*/
+}
+.cards-group .imgbox .image{
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*filter:grayscale(10%);*/
+}
+.cards-group .imgbox .image:hover{
+	filter:contrast(50%);
+	background-size: 105%;
+}
+.more{
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	font-size: 18px;
+	background-color: rgba(0, 0, 0, 0.3);
+	position: absolute; 
+	top: 0;
+	left: 0;
+
+	z-index: 10;
+
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+	text-decoration: none;
+	text-align: center;
+	user-select: none;
+	user-drag:none;
+	transition:all 0.3s;
+}
+/*.more a{
+	color: #fefefe;
+}*/
+.more:hover{
+	opacity: 1;
+
+}
+
+
+/*----------------*/
+/* about */
+/*----------------*/
+.about{
+	border:1px solid #fff;
+	padding-bottom: 100vh;
+	background-color: #fefefe;
+}
+
+/*----------------*/
+/* 01 project */
+/*----------------*/
+.project01{
+	border:1px solid #fff;
+	padding-bottom: 100vh;
+	background-color: #666666;
+}
+
+/*----------------*/
+/* Utility */
+/*----------------*/
+.u-padding-4{padding: 4px !important;}
+.u-padding-8{padding: 8px !important;}
+.u-padding-16{padding: 16px !important;}
+.u-padding-24{padding: 24px !important;}
+.u-padding-32{padding: 32px !important;}
+.u-padding-40{padding: 40px !important;}
+.u-padding-48{padding: 48px !important;}
+.u-pt-4{padding-top: 4px !important;}
+.u-pt-8{padding-top: 8px !important;}
+.u-pt-16{padding-top: 16px !important;}
+.u-pt-24{padding-top: 24px !important;}
+.u-pt-32{padding-top: 32px !important;}
+.u-pt-40{padding-top: 40px !important;}
+.u-pt-48{padding-top: 48px !important;}
+.u-pr-4{padding-right: 4px !important;}
+.u-pr-8{padding-right: 8px !important;}
+.u-pr-16{padding-right: 16px !important;}
+.u-pr-24{padding-right: 24px !important;}
+.u-pr-32{padding-right: 32px !important;}
+.u-pr-40{padding-right: 40px !important;}
+.u-pr-48{padding-right: 48px !important;}
+.u-pb-4{padding-bottom: 4px !important;}
+.u-pb-8{padding-bottom: 8px !important;}
+.u-pb-16{padding-bottom: 16px !important;}
+.u-pb-24{padding-bottom: 24px !important;}
+.u-pb-32{padding-bottom: 32px !important;}
+.u-pb-40{padding-bottom: 40px !important;}
+.u-pb-48{padding-bottom: 48px !important;}
+.u-pl-4{padding-left: 4px !important;}
+.u-pl-8{padding-left: 8px !important;}
+.u-pl-16{padding-left: 16px !important;}
+.u-pl-24{padding-left: 24px !important;}
+.u-pl-32{padding-left: 32px !important;}
+.u-pl-40{padding-left: 40px !important;}
+.u-pl-48{padding-left: 48px !important;}
+
+/* margin */
+.u-margin-4{margin: 4px !important;}
+.u-margin-8{margin: 8px !important;}
+.u-margin-16{margin: 16px !important;}
+.u-margin-24{margin: 24px !important;}
+.u-margin-32{margin: 32px !important;}
+.u-margin-40{margin: 40px !important;}
+.u-margin-48{margin: 48px !important;}
+.u-mt-4{margin-top: 4px !important;}
+.u-mt-8{margin-top: 8px !important;}
+.u-mt-16{margin-top: 16px !important;}
+.u-mt-24{margin-top: 24px !important;}
+.u-mt-32{margin-top: 32px !important;}
+.u-mt-40{margin-top: 40px !important;}
+.u-mt-48{margin-top: 48px !important;}
+.u-mr-4{margin-right: 4px !important;}
+.u-mr-8{margin-right: 8px !important;}
+.u-mr-16{margin-right: 16px !important;}
+.u-mr-24{margin-right: 24px !important;}
+.u-mr-32{margin-right: 32px !important;}
+.u-mr-40{margin-right: 40px !important;}
+.u-mr-48{margin-right: 48px !important;}
+.u-mb-4{margin-bottom: 4px !important;}
+.u-mb-8{margin-bottom: 8px !important;}
+.u-mb-16{margin-bottom: 16px !important;}
+.u-mb-24{margin-bottom: 24px !important;}
+.u-mb-32{margin-bottom: 32px !important;}
+.u-mb-40{margin-bottom: 40px !important;}
+.u-mb-48{margin-bottom: 48px !important;}
+.u-ml-4{margin-left: 4px !important;}
+.u-pl-8{padding-left: 8px !important;}
+.u-pl-16{padding-left: 16px !important;}
+.u-pl-24{padding-left: 24px !important;}
+.u-pl-32{padding-left: 32px !important;}
+.u-pl-40{padding-left: 40px !important;}
+.u-pl-48{padding-left: 48px !important;}
+
+/* text */
+.u-text-center{text-align: center !important;}
+.u-text-right{text-align: right !important;}
+
+/* float */
+.u-pull-left{float: left !important;}
+.u-push-right{float: right !important;}
+
+/* hide & show */
+.u-hidden{display: none !important;}
+.u-show{display: block !important;}
+
+/* center block */
+.u-center-block{
+	display: block !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+.u-clearfix{
+	clear: both;
+}
+
+

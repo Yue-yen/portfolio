@@ -1,0 +1,307 @@
+#e4edf9
+#a3a3a3
+#484848
+#d9e7d0
+
+/*----------------*/
+/* bass */
+/*----------------*/
+
+/***
+
+* Catalog
+
+* Font
+* Color
+* Typography
+* Icons
+* Utility
+
+***/
+
+*{
+	position: relative;
+	box-sizing: border-box;
+}
+
+/*----------------*/
+/* Font */
+/*----------------*/
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100&family=Merriweather:wght@300&display=swap');
+
+/*----------------
+/* Typography */
+/*----------------*/
+/*Global*/
+body,html{
+	font-family: 'Helvetica','roboto',arial,sans-serif, 'Merriweather', serif;
+}
+/*heading*/
+h1,h2,h3,h4,h5,h6,p{
+	margin:0;
+	color:#484848;
+}
+h1{
+	font-size: 50px;
+	font-weight: 800;
+	font-family: 'Helvetica','roboto',arial,sans-serif;
+	margin-top: 24px;
+	margin-bottom:24px;
+}
+h2{
+	font-size: 36px;
+	font-weight: 600;
+	font-family: 'Helvetica','roboto',arial,sans-serif;
+	margin-top: 24px;
+	margin-bottom:24px;
+}
+h3{
+	font-size: 30px;
+	font-weight: 600;
+	font-family: 'Helvetica','roboto',arial,sans-serif;
+	line-height: 48px;
+	margin-top: 24px;
+	margin-bottom:24px;
+}
+h4{
+	font-size: 24px;
+	font-weight: 600;
+	font-family: 'Helvetica','roboto',arial,sans-serif;
+	line-height: 32px;
+	margin-top: 24px;
+	margin-bottom:24px;
+}
+h5{
+	font-size: 20px;
+	font-weight: 400;
+	font-family: 'Helvetica','roboto',arial,sans-serif;
+	line-height: 1;
+	/*行高一倍*/
+	margin-top: 24px;
+	margin-bottom:16px;
+}
+h6{
+	font-size: 18px;
+	font-weight: 400;
+	font-family: 'Helvetica','roboto',arial,sans-serif;
+	line-height: 0.8;
+	margin-top: 16px;
+	margin-bottom:16px;
+}
+p{
+	font-size: 16px;
+	font-weight: 400;
+	font-family: 'Helvetica','roboto',arial,sans-serif;
+	line-height: 0.8;
+	margin-top: 32px;
+	letter-spacing: 0;
+	margin-bottom:16px;
+}
+.subtitle{
+	font-size: 40px;
+	color:#484848;
+	font-weight: 900;
+	font-family: 'Merriweather','Helvetica','roboto',arial,sans-serif;
+	/*border:1px solid #000;*/
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+@media (max-width: 768px){
+	.subtitle{
+		font-size: 32px;
+		margin-bottom: 0px;
+	}
+}
+
+
+/*link*/
+a{
+	color:#0C0C0C;
+	text-decoration: none;
+}
+a:hover,
+a:active,
+a:focus{
+	color:#0C0C0C;
+	text-decoration: none;
+}
+/*list*/
+ul{
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+/*----------------*/
+/* Icons */
+/*----------------*/
+
+
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?66001629');
+  src: url('../font/fontello.eot?66001629#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?66001629') format('woff2'),
+       url('../font/fontello.woff?66001629') format('woff'),
+       url('../font/fontello.ttf?66001629') format('truetype'),
+       url('../font/fontello.svg?66001629#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?66001629#fontello') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  /*margin-right: .2em;*/
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  /*line-height: 1em;*/
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  /*margin-left: .2em;*/
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+	
+
+}
+ 
+.icon-mail:before { content: '\e800'; } /* '' */
+.icon-ok:before { content: '\e801'; } /* '' */
+.icon-plus:before { content: '\e802'; } /* '' */
+.icon-cancel:before { content: '\e803'; } /* '' */
+.icon-menu:before { content: '\f0c9'; } /* '' */
+.icon-laptop:before { content: '\f109'; } /* '' */
+.icon-tablet:before { content: '\f10a'; } /* '' */
+.icon-mobile:before { content: '\f10b'; } /* '' */
+.icon-quote-left:before { content: '\f10d'; } /* '' */
+.icon-quote-right:before { content: '\f10e'; } /* '' */
+.icon-code:before { content: '\f121'; } /* '' */
+.icon-paper-plane:before { content: '\f1d8'; } /* '' */
+.icon-copyright:before { content: '\f1f9'; } /* '' */
+/*----------------*/
+/* Utility */
+/*----------------*/
+.u-padding-4{padding: 4px !important;}
+.u-padding-8{padding: 8px !important;}
+.u-padding-16{padding: 16px !important;}
+.u-padding-24{padding: 24px !important;}
+.u-padding-32{padding: 32px !important;}
+.u-padding-40{padding: 40px !important;}
+.u-padding-48{padding: 48px !important;}
+.u-pt-4{padding-top: 4px !important;}
+.u-pt-8{padding-top: 8px !important;}
+.u-pt-16{padding-top: 16px !important;}
+.u-pt-24{padding-top: 24px !important;}
+.u-pt-32{padding-top: 32px !important;}
+.u-pt-40{padding-top: 40px !important;}
+.u-pt-48{padding-top: 48px !important;}
+.u-pr-4{padding-right: 4px !important;}
+.u-pr-8{padding-right: 8px !important;}
+.u-pr-16{padding-right: 16px !important;}
+.u-pr-24{padding-right: 24px !important;}
+.u-pr-32{padding-right: 32px !important;}
+.u-pr-40{padding-right: 40px !important;}
+.u-pr-48{padding-right: 48px !important;}
+.u-pb-4{padding-bottom: 4px !important;}
+.u-pb-8{padding-bottom: 8px !important;}
+.u-pb-16{padding-bottom: 16px !important;}
+.u-pb-24{padding-bottom: 24px !important;}
+.u-pb-32{padding-bottom: 32px !important;}
+.u-pb-40{padding-bottom: 40px !important;}
+.u-pb-48{padding-bottom: 48px !important;}
+.u-pl-4{padding-left: 4px !important;}
+.u-pl-8{padding-left: 8px !important;}
+.u-pl-16{padding-left: 16px !important;}
+.u-pl-24{padding-left: 24px !important;}
+.u-pl-32{padding-left: 32px !important;}
+.u-pl-40{padding-left: 40px !important;}
+.u-pl-48{padding-left: 48px !important;}
+
+/* margin */
+.u-margin-4{margin: 4px !important;}
+.u-margin-8{margin: 8px !important;}
+.u-margin-16{margin: 16px !important;}
+.u-margin-24{margin: 24px !important;}
+.u-margin-32{margin: 32px !important;}
+.u-margin-40{margin: 40px !important;}
+.u-margin-48{margin: 48px !important;}
+.u-mt-4{margin-top: 4px !important;}
+.u-mt-8{margin-top: 8px !important;}
+.u-mt-16{margin-top: 16px !important;}
+.u-mt-24{margin-top: 24px !important;}
+.u-mt-32{margin-top: 32px !important;}
+.u-mt-40{margin-top: 40px !important;}
+.u-mt-48{margin-top: 48px !important;}
+.u-mr-4{margin-right: 4px !important;}
+.u-mr-8{margin-right: 8px !important;}
+.u-mr-16{margin-right: 16px !important;}
+.u-mr-24{margin-right: 24px !important;}
+.u-mr-32{margin-right: 32px !important;}
+.u-mr-40{margin-right: 40px !important;}
+.u-mr-48{margin-right: 48px !important;}
+.u-mb-4{margin-bottom: 4px !important;}
+.u-mb-8{margin-bottom: 8px !important;}
+.u-mb-16{margin-bottom: 16px !important;}
+.u-mb-24{margin-bottom: 24px !important;}
+.u-mb-32{margin-bottom: 32px !important;}
+.u-mb-40{margin-bottom: 40px !important;}
+.u-mb-48{margin-bottom: 48px !important;}
+.u-ml-4{margin-left: 4px !important;}
+.u-pl-8{padding-left: 8px !important;}
+.u-pl-16{padding-left: 16px !important;}
+.u-pl-24{padding-left: 24px !important;}
+.u-pl-32{padding-left: 32px !important;}
+.u-pl-40{padding-left: 40px !important;}
+.u-pl-48{padding-left: 48px !important;}
+
+/* text */
+.u-text-center{text-align: center !important;}
+.u-text-right{text-align: right !important;}
+
+/* float */
+.u-pull-left{float: left !important;}
+.u-push-right{float: right !important;}
+
+/* hide & show */
+.u-hidden{display: none !important;}
+.u-show{display: block !important;}
+
+/* center block */
+.u-center-block{
+	display: block !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+.u-clearfix{
+	clear: both;
+}
