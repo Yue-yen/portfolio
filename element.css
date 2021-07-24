@@ -69,16 +69,31 @@ h1{
 .title-box .subtitle{
 	font-size: 18px;
 }
-
-
+@media(max-width: 768px){
+	.title-box .title{
+	font-size: 28px;}
+}
+@media(max-width: 414px){
+	.title-box .title{
+	font-size: 24px;}
+	.title-box .subtitle{
+	font-size: 16px;}
+}
 /*----------------*/
 /* title animate */
 /*----------------*/
 .ml12 {
   font-weight: 200;
-  font-size: 1.8em;
+  font-size: 1.2em;
   text-transform: uppercase;
-  letter-spacing: 0.5em;
+  letter-spacing: 0.4em;
+}
+@media(max-width: 768px){
+	.ml12 {
+  font-weight: 200;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;}
 }
 .ml12 .letter {
   display: inline-block;
